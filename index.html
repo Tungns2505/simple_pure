@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Pure</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main">
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto maiores odio sed nihil officiis commodi possimus sapiente, aperiam molestias autem recusandae ut placeat doloremque iure rerum nesciunt blanditiis eum ab consectetur nemo, totam. Reiciendis minima, cum omnis cupiditate assumenda illum, necessitatibus consequatur dignissimos vitae deserunt maiores, praesentium repudiandae. Distinctio, autem.</p>
+  </div>
+  <script type="text/javascript">
+    document.querySelector('.main p').style.display = 'none';
+    document.querySelector('.main').classList.add('spinner-1');
+
+    setTimeout(() => {
+      document.querySelector('.main p').style.display = 'block';
+      document.querySelector('.main').classList.remove('spinner-1');
+    }, 4000);
+  </script>
+</body>
+</html>
